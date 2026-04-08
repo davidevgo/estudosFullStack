@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 02</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <!-- campo de texto-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Escreva seu nome completo">
+<hr>
+        <!-- campo de e-mail (valida o formato automaticamente) -->
+         <label for="email" >E-mail:</label>
+         <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+<hr>
+         <!--campo de senha -->
+         <label for="senha">Senha:</label>
+         <input type="password" id="senha" name="senha" >
+<hr>
+         <!-- Número -->
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" min="1" max="120">
+<hr>
+        <!-- área de texto grande -->
+          <label for="mensagem">Descreva-se:</label>
+          <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+<hr>
+        <!-- caixa de seleção (dropdown)-->
+        <label for="nivel">Nível:</label>
+        <select name="nivel" id="nivel">
+            <option value="">Selecione...</option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediario</option>
+            <option value="avancado">Avançado</option>
+        </select>
+    </form>
+<hr>
+        <!-- checkbox -->
+         <input type="checkbox" id="termos" name="termos">
+         <label for="termos">Aceitos os termos de uso</label>
+<hr>    
+        <!-- Radio buttons -->
+         <label for="text">Esta empregado atualmente? : </label>
+        <input type="radio" id="sim" name="empregado" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="empregado" value="nao">
+        <label for="nao">Não</label>
+<hr>
+        <!-- botão de envio-->
+         <button type="submit">Enviar</button>
+         <button type="reset">Reset</button>
+</body>
+</html>
