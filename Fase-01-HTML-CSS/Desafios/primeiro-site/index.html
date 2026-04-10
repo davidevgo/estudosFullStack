@@ -6,15 +6,41 @@
     <title>Azula</title>
 </head>
 <body>
-    <h1>Lojas Azula</h1>
+    <h1>Afiliados Azula</h1>
     <ul>
-        <li><a href=""></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planos.html">Vip</a></li>
+        <li><a href="sobrenos.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
     </ul>
-    <P>Azul atualmente é referencia no mercado de vendas atingindo um marco historico de 20 milhões de vendas nas primeiras 24hrs online</P>
+    <P> A <strong>Azula</strong> atualmente é referencia no mercado de vendas atingindo um marco historico de <strong>mais 20 milhões de reais</strong> em vendas nas primeiras 24hrs online</P>
     <img src="imagens/graficos.jpg" width="400" alt="grafico">
     <hr>
     <p>Anúcie seus produtos e começe a vender hoje mesmo , faça seu cadastro abaixo: </p>
-    
-    
+    <form action="#">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Escreva seu nome completo" required>
+        <br>
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        <br>
+
+        <label for="experiencia">Qual seu nivel de experiencia :</label>
+        <select name="experiencia" id="experiencia">
+            <option value=" ">Selecione..</option>
+            <option value="iniciante">Nunca vendi como afiliado</option>
+            <option value="intermediario">Já fiz algumas vendas</option>
+            <option value="avancado">Faço vendas diarias</option>
+        </select>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetar</button>
+
+    </form>
+    <hr>
+
 </body>
 </html>
