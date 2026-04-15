@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 05</title>
+</head>
+<body>
+     <h1> TAGS DE FORMATAÇÃO</h1>
+    <!-- Destaque de texto-->
+    <strong>texto importante (negrito semântico)</strong>
+    <em>Texto com ênfase (itálico semântico)</em>
+    <hr>
+
+    <!--Diferença: b e i são apenas visuais, sem significado-->
+    <b>Negrito visual (evite)</b>
+    <i>Itálico visual (evite)</i>
+    <hr>
+
+    <!-- código -->
+    <code>Let nome = "joão"</code>
+    <pre>
+        texto pré-formatado
+        que reserva espaços
+        e quebras de linha.
+    </pre>
+    <hr>
+
+    <!-- Citações -->
+    <blockquote>"A melhor hora para plantar uma árvore foi há 20 anos, a segunda melhor é agora."</blockquote>
+    <q>Citação inline dentro de um parágrafo</q>
+    <hr>
+
+    <!-- Abreviações -->
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+    <hr>
+
+    <!-- Endereço -->
+     <address>
+        rua das flores, 123
+        São Paulo, SP
+     </address>
+     <hr>
+
+     <!-- Data (machine-readable) -->
+      <time datetime="2026-04-15">15 de abril de 2026</time>
+      <hr>
+
+      <!-- Marcado/destacado -->
+     <mark>Texto destacado em amarelo</mark>
+     <hr>
+
+     <!-- tachado(fiz o L ate codando)/destacado-->
+     <del>Texto deletado</del>
+     <ins>Texto inserido</ins>
+     <hr>
+
+     <h2>Âncoras, caminhos e links avançados</h2>
+
+     <!-- Âncora (link interno para selçao da página)-->
+     <a href="#contato">ir para contato</a>
+     <!-- Destino da Âncora -->
+     <section id="contato">...</section>
+
+
+     <!--Download de arquivos-->
+     <a href="pdfs/test-driven-javascript.pdf" download="test-driven-javascript"> baixar estudos</a>
+     <br>
+
+     <!-- caminhos relativos/abisolutos -->
+
+     <!-- Relativo : arquivo na mesma pasta-->
+     <a href="contato.html">contato</a>
+     <br> 
+
+     <!-- Relativo : arquivo na pasta acima-->
+     <a href="../dia-04/index.html">dia 04</a>
+     <br>
+
+     <!-- Relativo : arquivo numa subpasta-->
+     <a href="pags/sobre.html">sobre</a>
+     <br>
+
+     <!-- absoluto: url completa -->
+     <a href="https://github.com/davidevgo" target="_blank">Github DavidevGO</a>
+     <hr>
+
+     <h2>Multimídia: Áudio e video</h2>
+
+     <!-- vídeo -->
+     <video width="640" height="360" muted controls alt="edit do lucas">
+        <source src="video.mp4" type="video/mp4">
+     </video>
+     <br>
+
+     <!--Vídeo do Youtube(embed) -->
+     <iframe 
+     width="640"
+     height="360"
+     src="https://www.youtube.com/embed/e4Ez99gCOiY?si=iYjv0pC5S7Jwx-UC"
+     title="Alceu Valença - Flor de Tangerina (Trilha Original de Velho Chico)"
+     >
+     </iframe>
+     <br>
+
+     <!--Áudio -->
+     <audio controls>
+        <source src="Pitty - Na Sua Estante.mp3" type="audio/mpeg">
+
+     </audio>
+     <br>
+
+     <!--Figura com legenda -->
+     <figure>
+        <img src="kenpachi.jpg" alt="kenpachi zaraki">
+        <figcaption>O personagem mais brabo dos animes</figcaption>
+
+     </figure>
+    <hr>
+
+     <h2>Html5 atribultos de dados</h2>
+
+     <!--atributos de dados customizados(data-*)-->
+     <div data-id="42" data-categoria="tecnologia" data-ativo="true">
+        produto XYZ 
+     </div>
+
+     <!--atributos globais importantes-->
+     <p id="paragrafo-01" class="destaque importante" title="tooltip ao passar o mouse">texto com atribultos globais</p>
+
+     <!-- campos de formulário avançados -->
+     <input 
+     type="text"
+     name="nome"
+     required
+     id="nome"
+     minlength="3"
+     maxlength="50"
+     pattern="[A-Za-z]+"
+     autocomplete="name">
+
+     <input type="date">
+     <input type="color">
+     <input type="range" min="0" max="100" step="1">
+     <input type="search">
+     <input type="file" accept=".pdf,.doc">
+     <input type="fie" accept="image/*" multiple>
+
+     <!--Fieldset para agrupar campos relacionados-->
+     <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+     </fieldset>
+
+
+
+    </body>
+</html>
